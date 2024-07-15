@@ -5,8 +5,8 @@
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  /* Colours */
+  /*Colour mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(219, 69%, 56%);
   --first-color-alt: hsl(219, 69%, 52%);
   --title-color: hsl(219, 8%, 95%);
@@ -16,21 +16,21 @@
   --body-color: hsl(219, 4%, 4%);
   --container-color: hsl(219, 4%, 7%);
 
-  /*========== Font and typography ==========*/
+  /* Fonts */
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Exo', sans-serif;
+  --body-font: "Exo", sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
-  /*========== Font weight ==========*/
+  /* Font weight */
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== z index ==========*/
+  /* Z-Index */
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -41,12 +41,12 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
-/*=============== BASE ===============*/
+/* Base CSS of Website */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -64,7 +64,9 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -82,7 +84,7 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/* Reusable CSS Classes */
 .container {
   max-width: 1024px;
   margin-right: 1.5rem;
@@ -108,7 +110,61 @@ img {
   overflow: hidden;
 }
 
-/*=============== HEADER & NAV ===============*/
+/* Header Nav */
+.header {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__toggle{
+  color: var(--title-color);
+  display: inline-flex;
+}
+
+.nav__logo{
+  align-items: center;
+  column-gap: 25rem;
+  font-weight: var(--font-medium);
+  transition: .3s;
+}
+
+.nav__logo i{
+  font-size: 1.25rem;
+}
+
+.nav__logo:hover{
+  color: var(--first-color);
+}
+
+.nav__toggle{
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+  .nav__menu{
+    position: fixed;
+    background-color: hsla(0, 0%, 100%, .1);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(96px);
+    
+  }
+}
 
 
 /* Show menu */
