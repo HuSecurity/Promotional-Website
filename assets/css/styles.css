@@ -208,7 +208,49 @@ img {
 
 /* Home Section */
 
+.home{
+  position: relative;
+  overflow: hidden; 
+}
 
+.home__container{ 
+  position: relative;
+  padding-top: 4rem;
+  row-gap: 3rem;
+}
+
+.home__data{
+  text-align: center;
+}
+
+.home__title{
+  font-size: var(--h1-font-size);
+  margin-bottom : 1rem;
+}
+
+.home__subtitle{
+  font-size: var(--h3-font-size);
+  margin-bottom: .25rem;
+}
+
+
+.home__elec{
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.home__elec i{
+  color: var(--first-color);
+}
+
+.home__img{
+  width: 280px;
+  justify-self: center;
+}
 /* Button animate */
 
 
