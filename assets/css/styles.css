@@ -135,7 +135,7 @@ img {
 
 .nav__logo{
   align-items: center;
-  column-gap: 25rem;
+  column-gap: .25rem;
   font-weight: var(--font-medium);
   transition: .3s;
 }
@@ -158,7 +158,7 @@ img {
     position: fixed;
     background-color: hsla(0, 0%, 100%, .1);
     top: 0;
-    right: 0;
+    right: -100%;
     width: 100%;
     height: 100%;
     backdrop-filter: blur(96px);
@@ -190,11 +190,15 @@ img {
   font-size: 2rem;
   color: var(--white-color);
   position: absolute;
-  
+  top: 1rem;
+  right: 1rem;
+  position: pointer;
 }
 
 /* Show menu */
-
+.show-menu{
+  right: 0;
+}
 
 /* Change background header */
 
@@ -202,7 +206,7 @@ img {
 /* Active link */
 
 
-/*=============== HOME ===============*/
+/* Home Section */
 
 
 /* Button animate */
