@@ -85,6 +85,7 @@ img {
 }
 
 /* Reusable CSS Classes */
+
 .container {
   max-width: 1024px;
   margin-right: 1.5rem;
@@ -110,6 +111,22 @@ img {
   overflow: hidden;
 }
 
+.shape {
+  background-color: hsla(219, 33%, 32%, 0.5);
+  filter: blur(112px);
+  border-radius: 50%;
+}
+
+.shape__big {
+  width: 400px;
+  height: 400px;
+}
+
+.shape__small {
+  width: 300px;
+  height: 300px;
+}
+
 /* Header Nav */
 .header {
   width: 100%;
@@ -128,45 +145,45 @@ img {
 }
 
 .nav__logo,
-.nav__toggle{
+.nav__toggle {
   color: var(--title-color);
   display: inline-flex;
 }
 
-.nav__logo{
+.nav__logo {
   align-items: center;
-  column-gap: .25rem;
+  column-gap: 0.25rem;
   font-weight: var(--font-medium);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.nav__logo i{
+.nav__logo i {
   font-size: 1.25rem;
 }
 
-.nav__logo:hover{
+.nav__logo:hover {
   color: var(--first-color);
 }
 
-.nav__toggle{
+.nav__toggle {
   font-size: 1.25rem;
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px){
-  .nav__menu{
+@media screen and (max-width: 767px) {
+  .nav__menu {
     position: fixed;
-    background-color: hsla(0, 0%, 100%, .1);
+    background-color: hsla(0, 0%, 100%, 0.1);
     top: 0;
     right: -100%;
     width: 100%;
     height: 100%;
     backdrop-filter: blur(96px);
-    transition: .3s;
+    transition: 0.3s;
   }
 }
 
-.nav__list{
+.nav__list {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -174,19 +191,19 @@ img {
   padding-top: 9rem;
 }
 
-.nav__link{
+.nav__link {
   text-transform: uppercase;
   color: var(--title-color);
   font-size: var(--h2-font-size);
   font-weight: var(--font-medium);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.nav__link:hover{
-  color: var(--first-color)
+.nav__link:hover {
+  color: var(--first-color);
 }
 
-.nav__close{
+.nav__close {
   font-size: 2rem;
   color: var(--white-color);
   position: absolute;
@@ -196,63 +213,60 @@ img {
 }
 
 /* Show menu */
-.show-menu{
+.show-menu {
   right: 0;
 }
 
 /* Change background header */
 
-
 /* Active link */
-
 
 /* Home Section */
 
-.home{
+.home {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-.home__container{ 
+.home__container {
   position: relative;
   padding-top: 4rem;
   row-gap: 3rem;
 }
 
-.home__data{
+.home__data {
   text-align: center;
 }
 
-.home__title{
+.home__title {
   font-size: var(--h1-font-size);
-  margin-bottom : 1rem;
+  margin-bottom: 1rem;
 }
 
-.home__subtitle{
+.home__subtitle {
   font-size: var(--h3-font-size);
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
-
-.home__elec{
+.home__elec {
   font-size: var(--small-font-size);
   color: var(--text-color);
   font-weight: 400;
   display: inline-flex;
   align-items: center;
-  column-gap: .25rem;
+  column-gap: 0.25rem;
 }
 
-.home__elec i{
+.home__elec i {
   color: var(--first-color);
 }
 
-.home__img{
+.home__img {
   width: 280px;
   justify-self: center;
 }
 
-.home__car{
+.home__car {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,34 +274,34 @@ img {
   margin-bottom: 2rem;
 }
 
-.home__car-name{
-  font-size: .625rem;
+.home__car-name {
+  font-size: 0.625rem;
   font-weight: 400;
   color: var(--text-color-light);
 }
 
-.home__car-data{
+.home__car-data {
   text-align: center;
 }
 
-.home__car-number{
+.home__car-number {
   font-size: var(--h2-font-size);
   font-weight: var(--font-medium);
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
-.home__car-icon{
+.home__car-icon {
   background-color: var(--container-color);
   border-radius: 50%;
-  padding: .376rem;
+  padding: 0.376rem;
   display: inline-flex;
   justify-content: center;
-  align-items: center ;
-  font-size: .875rem;
-  margin-bottom: .75rem;
+  align-items: center;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
 }
 
-.home__button{
+.home__button {
   position: relative;
   border: 2px solid hsl(158, 89%, 30%);
   width: 70px;
@@ -302,72 +316,72 @@ img {
   font-weight: var(--font-medium);
 }
 
-.home__button::before{
-  content: '';
+.home__button::before {
+  content: "";
   border: 2px solid hsl(158, 98%, 43%);
   width: 90px;
   height: 90px;
   position: absolute;
   border-radius: 50%;
   box-shadow: 0 0 12px hsl(158, 98%, 43%);
-  transition: .3s;
-  animation: button 3s infinite;
+  transition: 0.3s;
+  /* animation: button 3s infinite; */
+}
+
+.home .shape__big,
+.home .shape__small {
+  position: absolute;
+}
+
+.home .shape__big {
+  left: -9rem;
+  top: -4rem;
+}
+
+.home .shape__small {
+  right: -10rem;
+  bottom: 3rem;
 }
 
 /* Button animate */
-@keyframes button{
-  0%{
-    box-shadow: 0 0 12px hsl(158, 98%, 43%); ;
+@keyframes button {
+  0% {
+    box-shadow: 0 0 12px hsl(158, 98%, 43%);
   }
-  50%{
+  50% {
     box-shadow: 0 24px hsl(158, 98%, 43%);
   }
 }
 
 /*=============== BUTTON ===============*/
 
-
 /*=============== ABOUT ===============*/
-
 
 /*=============== POPULAR ===============*/
 
-
 /* Swiper class */
-
 
 /*=============== FEATURES ===============*/
 
-
 /*=============== FEATURED ===============*/
-
 
 /* Active link featured */
 
-
 /*=============== OFFER ===============*/
-
 
 /*=============== LOGOS ===============*/
 
-
 /*=============== FOOTER ===============*/
-
 
 /*=============== SCROLL BAR ===============*/
 
-
 /*=============== SCROLL UP ===============*/
 
-
 /* Show Scroll Up*/
-
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-
 /* For medium devices */
-
 
 /* For large devices */
