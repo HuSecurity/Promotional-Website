@@ -127,6 +127,12 @@ img {
   height: 300px;
 }
 
+.shape__smaller{
+  width: 180px;
+  height: 180px;
+  filter: blur(64px);
+}
+
 /* Header Nav */
 .header {
   width: 100%;
@@ -218,6 +224,12 @@ img {
 }
 
 /* Change background header */
+.scroll-header{
+  border-radius: 0 0 1rem 1rem;
+  background-color: var(--body-color);
+  box-shadow: 0 2px 4px hsla(0, 0, 1%, 1);
+  /* animation: header 3s single; */
+}
 
 /* Active link */
 
@@ -353,11 +365,106 @@ img {
   }
 }
 
-/*=============== BUTTON ===============*/
+/* General Button */
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  border-radius: .25rem;
+  font-size: var(--normal-font-size);
+  transition: .3s;
+}
 
-/*=============== ABOUT ===============*/
+.button:hover{
+  background-color: var(--first-color-alt);
+}
 
-/*=============== POPULAR ===============*/
+
+/* About */
+.about__container{
+  row-gap: 6rem;
+}
+
+.about__group{
+  position: relative;
+}
+
+.about__img{
+  width: 310px;
+  border-radius: .5rem;
+}
+
+.about__card{ 
+  width: 180px;
+  position: absolute;
+  right: 0;
+  bottom: -2.5rem;
+  background-color: hsla(0, 0%, 100%, .1);
+  backdrop-filter: blur(16px);
+  padding: 1rem .75rem;
+  text-align: center;
+  border-radius: 1.25rem;
+}
+
+.about__card-title{
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+}
+
+.about__card-description{
+  font-size: var(--smaller-font-size);
+}
+
+.about__title{
+  text-align: initial;
+  margin-bottom: 2rem;
+}
+
+.about__description{
+  margin-bottom: 2rem;
+}
+
+/* Membership */
+.membership__container{
+  padding-top: 1rem;
+}
+
+.membership__card{
+  position:relative;
+  width: 238px;
+  background-color: var(--container-color);
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+.membership__card .shape__smaller{
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+}
+
+.membership__title, .membership__subtitle, .membership__img{
+  position: relative;
+}
+
+.membership__title{
+  font-size: var(--h2-font-size);
+  margin-bottom: .25rem;
+}
+
+.membership__subtitle{
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.membership__img{
+  width: 160px;
+  margin: .75rem 0 1.25rem 1.5rem;
+}
 
 /* Swiper class */
 
