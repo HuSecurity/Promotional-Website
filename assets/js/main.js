@@ -37,8 +37,26 @@ const scrollHeader = () =>{
 window.addEventListener('scroll', scrollHeader)
 
 
-/*=============== POPULAR SWIPER ===============*/
+// Membership Swiper
+let swiperMembership = new Swiper(".membership__container", {
+    loop:true,
+    spaceBetween: 24,
+    slidesPerView: "auto",
+    grabCursor: true,
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3
+        },
+        1024: {
+            spaceBetween: 50,
+        }
 
+    }
+})
 
 /*=============== MIXITUP FILTER FEATURED ===============*/
 
@@ -50,6 +68,3 @@ window.addEventListener('scroll', scrollHeader)
 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/

@@ -506,12 +506,20 @@ img {
 }
 
 .membership__card:hover .membership__img{
- transform: translateY(-0.25rem);
+ transform: translateY(-.25rem);
 }
 
 /* Swiper class */
+.swiper-pagination-bullet{
+  background: var(--text-color);
+}
 
-/*=============== FEATURES ===============*/
+.swiper-pagination-bullet-active{
+  background-color: var(--first-color);
+}
+
+
+/* Features */
 
 /*=============== FEATURED ===============*/
 
