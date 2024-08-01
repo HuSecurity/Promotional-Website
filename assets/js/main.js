@@ -18,11 +18,11 @@ if(navClose){
 }
 
 // Mobile Menu Removal (Responsive)
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav-link')
 
 const linkAction = () =>{
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
+    // When we click on each nav-link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -38,7 +38,7 @@ window.addEventListener('scroll', scrollHeader)
 
 
 // Membership Swiper
-let swiperMembership = new Swiper(".membership__container", {
+let swiperMembership = new Swiper(".membership-container", {
     loop:true,
     spaceBetween: 24,
     slidesPerView: "auto",

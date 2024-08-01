@@ -101,7 +101,7 @@ img {
   padding: 4.5rem 0 2rem;
 }
 
-.section__title {
+.section-title {
   font-size: var(--h2-font-size);
   text-align: center;
   margin-bottom: 2.5rem;
@@ -117,17 +117,17 @@ img {
   border-radius: 50%;
 }
 
-.shape__big {
+.shape-big {
   width: 400px;
   height: 400px;
 }
 
-.shape__small {
+.shape-small {
   width: 300px;
   height: 300px;
 }
 
-.shape__smaller{
+.shape-smaller{
   width: 180px;
   height: 180px;
   filter: blur(64px);
@@ -150,34 +150,34 @@ img {
   align-items: center;
 }
 
-.nav__logo,
-.nav__toggle {
+.nav-logo,
+.nav-toggle {
   color: var(--title-color);
   display: inline-flex;
 }
 
-.nav__logo {
+.nav-logo {
   align-items: center;
   column-gap: 0.25rem;
   font-weight: var(--font-medium);
   transition: 0.3s;
 }
 
-.nav__logo i {
+.nav-logo i {
   font-size: 1.25rem;
 }
 
-.nav__logo:hover {
+.nav-logo:hover {
   color: var(--first-color);
 }
 
-.nav__toggle {
+.nav-toggle {
   font-size: 1.25rem;
   cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
-  .nav__menu {
+  .nav-menu {
     position: fixed;
     background-color: hsla(0, 0%, 100%, 0.1);
     top: 0;
@@ -189,7 +189,7 @@ img {
   }
 }
 
-.nav__list {
+.nav-list {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -197,7 +197,7 @@ img {
   padding-top: 9rem;
 }
 
-.nav__link {
+.nav-link {
   text-transform: uppercase;
   color: var(--title-color);
   font-size: var(--h2-font-size);
@@ -205,11 +205,11 @@ img {
   transition: 0.3s;
 }
 
-.nav__link:hover {
+.nav-link:hover {
   color: var(--first-color);
 }
 
-.nav__close {
+.nav-close {
   font-size: 2rem;
   color: var(--white-color);
   position: absolute;
@@ -240,27 +240,27 @@ img {
   overflow: hidden;
 }
 
-.home__container {
+.home-container {
   position: relative;
   padding-top: 4rem;
   row-gap: 3rem;
 }
 
-.home__data {
+.home-data {
   text-align: center;
 }
 
-.home__title {
+.home-title {
   font-size: var(--h1-font-size);
   margin-bottom: 1rem;
 }
 
-.home__subtitle {
+.home-subtitle {
   font-size: var(--h3-font-size);
   margin-bottom: 0.25rem;
 }
 
-.home__elec {
+.home-elec {
   font-size: var(--small-font-size);
   color: var(--text-color);
   font-weight: 400;
@@ -269,16 +269,16 @@ img {
   column-gap: 0.25rem;
 }
 
-.home__elec i {
+.home-elec i {
   color: var(--first-color);
 }
 
-.home__img {
+.home-img {
   width: 280px;
   justify-self: center;
 }
 
-.home__car {
+.home-car {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,23 +286,23 @@ img {
   margin-bottom: 2rem;
 }
 
-.home__car-name {
+.home-car-name {
   font-size: 0.625rem;
   font-weight: 400;
   color: var(--text-color-light);
 }
 
-.home__car-data {
+.home-car-data {
   text-align: center;
 }
 
-.home__car-number {
+.home-car-number {
   font-size: var(--h2-font-size);
   font-weight: var(--font-medium);
   margin-bottom: 0.25rem;
 }
 
-.home__car-icon {
+.home-car-icon {
   background-color: var(--container-color);
   border-radius: 50%;
   padding: 0.376rem;
@@ -313,7 +313,7 @@ img {
   margin-bottom: 0.75rem;
 }
 
-.home__button {
+.home-button {
   position: relative;
   border: 2px solid hsl(158, 89%, 30%);
   width: 70px;
@@ -328,7 +328,7 @@ img {
   font-weight: var(--font-medium);
 }
 
-.home__button::before {
+.home-button::before {
   content: "";
   border: 2px solid hsl(158, 98%, 43%);
   width: 90px;
@@ -340,17 +340,17 @@ img {
   /* animation: button 3s infinite; */
 }
 
-.home .shape__big,
-.home .shape__small {
+.home .shape-big,
+.home .shape-small {
   position: absolute;
 }
 
-.home .shape__big {
+.home .shape-big {
   left: -9rem;
   top: -4rem;
 }
 
-.home .shape__small {
+.home .shape-small {
   right: -10rem;
   bottom: 3rem;
 }
@@ -382,20 +382,20 @@ img {
 
 
 /* About */
-.about__container{
+.about-container{
   row-gap: 6rem;
 }
 
-.about__group{
+.about-group{
   position: relative;
 }
 
-.about__img{
+.about-img{
   width: 310px;
   border-radius: .5rem;
 }
 
-.about__card{ 
+.about-card{ 
   width: 180px;
   position: absolute;
   right: 0;
@@ -407,30 +407,30 @@ img {
   border-radius: 1.25rem;
 }
 
-.about__card-title{
+.about-card-title{
   font-size: var(--h3-font-size);
   margin-bottom: .5rem;
 }
 
-.about__card-description{
+.about-card-description{
   font-size: var(--smaller-font-size);
 }
 
-.about__title{
+.about-title{
   text-align: initial;
   margin-bottom: 2rem;
 }
 
-.about__description{
+.about-description{
   margin-bottom: 2rem;
 }
 
 /* Membership */
-.membership__container{
+.membership-container{
   padding-top: 1rem;
 }
 
-.membership__card{
+.membership-card{
   position:relative;
   width: 238px;
   background-color: var(--container-color);
@@ -440,41 +440,41 @@ img {
   overflow: hidden;
 }
 
-.membership__card .shape__smaller{
+.membership-card .shape-smaller{
   position: absolute;
   top: -2.5rem;
   left: -2.5rem;
 }
 
-.membership__title, .membership__subtitle, .membership__img{
+.membership-title, .membership-subtitle, .membership-img{
   position: relative;
 }
 
-.membership__title{
+.membership-title{
   font-size: var(--h2-font-size);
   margin-bottom: .25rem;
 }
 
-.membership__subtitle{
+.membership-subtitle{
   font-size: var(--normal-font-size);
   color: var(--text-color);
   font-weight: 400;
 }
 
-.membership__img{
+.membership-img{
   width: 160px;
   margin: .75rem 0 1.25rem 1.5rem;
   transition: 3s;
 }
 
-.membership__data{
+.membership-data{
   display: grid;
   grid-template-columns: repeat(1, max-content);
   gap: .5 1.25rem;
   margin-bottom: 2rem;
 }
 
-.membership__data-group{
+.membership-data-group{
   display: inline-flex;
   align-items: center;
   column-gap: .5rem;
@@ -482,15 +482,15 @@ img {
   color: var(--white-color);
 }
 
-.membership__data i{
+.membership-data i{
   font-size: 1rem;
 }
 
-.membership__price{
+.membership-price{
   font-size: var(--h3-font-size);
 }
 
-.membership__button{
+.membership-button{
   border: none;
   outline: none;
   padding: .75ren 1rem;
@@ -501,11 +501,11 @@ img {
   cursor: pointer;
 }
 
-.membership__button i{
+.membership-button i{
   font-size: 1.25rem;
 }
 
-.membership__card:hover .membership__img{
+.membership-card:hover .membership-img{
  transform: translateY(-.25rem);
 }
 
@@ -520,10 +520,79 @@ img {
 
 
 /* Features */
+.features{
+  overflow: hidden;
+  position: relative;
+}
 
-/*=============== FEATURED ===============*/
+.features-container{
+  padding-top: 2rem;
+  grid-template-columns: 285px;
+  justify-content: center;
+}
 
-/* Active link featured */
+.features-group{
+  display: grid;
+  position: relative;
+  z-index: 10;
+}
+
+.features-img{
+  width: 150px;
+  height: 500px;
+  justify-self: center;
+}
+
+.features-card{
+  width: 112px;
+  background-color: hsla(0, 0%, 100%, .1);
+  backdrop-filter: blur(16px);
+  border-radius: 1.25rem;
+  padding: .75rem 2rem;
+  text-align: center;
+  color: var(--title-color);
+  position: absolute;
+}
+
+.features-card-1{
+  top: 4rem;
+  left: 1.5rem;
+}
+
+.features-card-2{
+  top: 8rem;
+  right: 1rem;
+}
+
+.features-card-3{
+  left: 1.5rem;
+  bottom: 2rem;
+}
+
+.features-card-title{
+  font-size: var(--h3-font-size);
+  margin-bottom: .25rem;
+}
+
+.features-card-description{
+  font-size: var(--smaller-font-size);
+}
+
+.features-map{
+  max-width: initial;
+  width: 450px;
+  position: absolute;
+  top: 8rem;
+  left: -3rem;
+  margin: auto;
+  transform: rotate(-22deg);
+}
+
+/* Models */
+
+
+
+/* Active link Models */
 
 /*=============== OFFER ===============*/
 
