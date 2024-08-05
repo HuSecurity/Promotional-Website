@@ -640,9 +640,9 @@ img {
   position: absolute;
   max-width: initial;
   width: 150px;
+  display: flex;
   justify-self: center;
-  bottom: 6rem;
-  left: 10rem;
+  top: 20rem;
   /* right: -5.5rem; */
 }
 
@@ -653,24 +653,24 @@ img {
   overflow: hidden;
 }
 
-.footer .shape-big, 
-.footer .shape-small{
+.footer .shape-big,
+.footer .shape-small {
   position: absolute;
 }
 
-.footer .shape-big{
+.footer .shape-big {
   width: 300px;
   height: 300px;
   left: -12rem;
-  top: 6rem; 
+  top: 6rem;
 }
 
-.footer .shape-small{
+.footer .shape-small {
   right: -13rem;
   bottom: -6rem;
 }
 
-.footer-container{
+.footer-container {
   row-gap: 2.5rem;
 }
 
