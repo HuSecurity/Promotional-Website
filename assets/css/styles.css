@@ -893,5 +893,113 @@ img {
     width: 380px;
   }
 
+  .home-car{
+    column-gap: 7rem;
+  }
   
+  .home-car-icon{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-container{
+    column-gap: 6rem;
+    align-items: center;
+  }
+
+  .about-group,
+  .about-img{
+    width: 480px;
+  }
+
+  .about-card{
+    width: 198px;
+    padding: 1rem 1.25rem;
+  }
+
+  .about-description{
+    padding-right: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .membership-container{
+    width: 875px;
+    padding-top: 3rem;
+  }
+
+  .membership-card{
+    width: 285px;
+    border-radius: 1.25rem;
+  }
+
+  .membership-img{
+    width: 180px;
+    margin: .75rem 0 1.25rem 2rem;
+  }
+
+  .features-container{
+    padding: 2rem 0 3rem;
+  }
+
+  .features-img{
+    width: 700px;
+  }
+
+  .features-card{
+    width: 127px;
+    padding: .75rem 2.5rem;
+  }
+
+  .features-card-1{
+    left: -1rem;
+  }
+
+  .features-card-2{
+    right: -.5rem;
+  }
+
+  .features-card-3{
+    left: -.7rem;
+    bottom: 7rem;
+  }
+
+  .features-map{
+    width: 1050px;
+    top: 11rem;
+
+  }
+
+  .footer-container{
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-between;
+  }
+
+  .footer-logo{
+    column-gap: .5rem;
+  }
+
+  .footer-logo i{
+    font-size: 2rem;
+  }
+
+  .footer-title{
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-links{
+    row-gap: .75rem;
+  }
+
+  .footer-social-link{
+    font-size: 1.5rem;
+  }
+
+  .footer-copy{
+    margin-top: 8rem;
+    padding-bottom: 1rem;
+  }
+
+  .scrollup{
+    right: 3rem;
+  }
 }

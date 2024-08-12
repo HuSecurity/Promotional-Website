@@ -94,3 +94,21 @@ const scrollActive = () => {
   });
 };
 window.addEventListener("scroll", scrollActive);
+
+// Scroll Reveal Animation
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  // reset: true
+});
+
+sr.reveal(".home-title, .membership-container");
+sr.reveal(".home-subtitle", { delay: 500 });
+sr.reveal('.home-elec', {delay: 600})
+sr.reveal('.home-img', {delay: 800})
+sr.reveal('.home-car-data', {delay: 900, interval: 100, origin: 'bottom',  })
+sr.reveal('.home-button', {delay: 1000, origin: 'bottom',  })
+sr.reveal('.about-group', {origin: 'left'})
+sr.reveal('.about-data', {origin: 'right'})
