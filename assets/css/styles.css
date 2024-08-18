@@ -990,6 +990,11 @@ img {
     row-gap: .75rem;
   }
 
+  .footer-description{
+    display: flex;
+    justify-content: center;
+  }
+
   .footer-social-link{
     font-size: 1.5rem;
   }

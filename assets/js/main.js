@@ -104,11 +104,14 @@ const sr = ScrollReveal({
   // reset: true
 });
 
-sr.reveal(".home-title, .membership-container");
+sr.reveal(".home-title, .membership-container, .features-container");
 sr.reveal(".home-subtitle", { delay: 500 });
 sr.reveal('.home-elec', {delay: 600})
 sr.reveal('.home-img', {delay: 800})
 sr.reveal('.home-car-data', {delay: 900, interval: 100, origin: 'bottom',  })
 sr.reveal('.home-button', {delay: 1000, origin: 'bottom',  })
-sr.reveal('.about-group', {origin: 'left'})
-sr.reveal('.about-data', {origin: 'right'})
+sr.reveal('.about-group, .offer-data', {origin: 'left'})
+sr.reveal('.about-data, .offer-img', {origin: 'right'})
+sr.reveal('.features-map', {delay: 600,origin: 'bottom'})
+sr.reveal('.features-card', {interval: 300})
+sr.reveal('.footer-content', {interval: 100})
